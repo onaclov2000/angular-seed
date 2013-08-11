@@ -161,4 +161,5 @@ fetch the changes and merge them into your project with git.
 ## Contact
 
 For more information on AngularJS please check out http://angularjs.org/
-For more information about onaclov check out http://onaclovtech.com
+
+For more information about onaclovtech check out http://onaclovtech.com
