@@ -3,15 +3,11 @@
 /* Controllers */
 
 angular.module('myApp.controllers', []).
-  controller('MyCtrl1', [function() {
-
+  controller('homeCtrl', [function() {
   }])
-  .controller('MyCtrl2', [function() {
-
+  .controller('aboutCtrl', [function() {
   }])
-  .controller('MyCtrl3', [function() {
-
+  .controller('contactCtrl', [function() {
   }])
-  .controller('MyCtrl4', [function() {
-
+  .controller('moreCtrl', [function() {
   }]);
