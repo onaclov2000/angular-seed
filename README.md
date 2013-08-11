@@ -1,22 +1,25 @@
-# angular-seed — the seed for AngularJS apps
+# angular-seed — the seed for AngularJS apps with a twitter bootstrap ui element
 
 This project is an application skeleton for a typical [AngularJS](http://angularjs.org/) web app.
 You can use it to quickly bootstrap your angular webapp projects and dev environment for these
-projects.
+projects, as well as setup a consistant navigation for all your webapps.
 
 The seed contains AngularJS libraries, test libraries and a bunch of scripts all preconfigured for
 instant web development gratification. Just clone the repo (or download the zip/tarball), start up
-our (or yours) webserver and you are ready to develop and test your application.
+our (or yours) webserver and you are ready to develop and test your application. Don't forget to 
+update colors/etc, and replace "by onaclovtech" with your own company.
 
-The seed app doesn't do much, just shows how to wire two controllers and views together. You can
-check it out by opening app/index.html in your browser (might not work file `file://` scheme in
-certain browsers, see note below).
+This seed app doesn't do much, just wires up controllers for the app, the about, the contact, and 
+the more apps views together. You can check it out by opening app/index.html in your browser 
+(might not work file `file://` scheme in certain browsers, see note below). This was not working 
+in Chrome without using a server of sorts, I used nodejs and it worked perfect.
 
 _Note: While angular is client-side-only technology and it's possible to create angular webapps that
 don't require a backend server at all, we recommend hosting the project files using a local
 webserver during development to avoid issues with security restrictions (sandbox) in browsers. The
 sandbox implementation varies between browsers, but quite often prevents things like cookies, xhr,
-etc to function properly when an html page is opened via `file://` scheme instead of `http://`._
+etc to function properly when an html page is opened via `file://` scheme instead of `http://`. The 
+ng-view (directive?) won't work unless you use a webserver._
 
 
 ## How to use angular-seed
@@ -100,6 +103,13 @@ fetch the changes and merge them into your project with git.
 ## Directory Layout
 
     app/                --> all of the files to be used in production
+      bootstrap/
+        js/
+          bootstrap.js
+          bootstrap.min.js
+        css/
+          bootstrap.css
+          boostrap.min.css
       css/              --> css files
         app.css         --> default stylesheet
       img/              --> image files
@@ -118,8 +128,10 @@ fetch the changes and merge them into your project with git.
           angular-*.js      --> angular add-on modules
           version.txt       --> version number
       partials/             --> angular view partials (partial html templates)
-        partial1.html
-        partial2.html
+        home.html
+        contact.html
+        about.html
+        more.html
 
     config/karma.conf.js        --> config file for running unit tests with Karma
     config/karma-e2e.conf.js    --> config file for running e2e tests with Karma
@@ -149,3 +161,4 @@ fetch the changes and merge them into your project with git.
 ## Contact
 
 For more information on AngularJS please check out http://angularjs.org/
+For more information about onaclov check out http://onaclovtech.com
